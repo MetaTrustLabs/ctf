@@ -50,7 +50,7 @@ contract StakingPoolsDeployment {
         return rewardTokens[1].balanceOf(msg.sender) > 16 * 1e8 * 1e18;
     }
 
-    function isResolved() public view returns(bool) {
+    function isSolved() public view returns(bool) {
         return stageA() && stageB();
     }
 }
