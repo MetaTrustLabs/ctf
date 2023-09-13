@@ -83,6 +83,6 @@ contract Foo {
     }
 
     function isSolved() external view returns (bool) {
-        return stats[4][msg.sender];
+        return stats[4][who];
     }
 }
