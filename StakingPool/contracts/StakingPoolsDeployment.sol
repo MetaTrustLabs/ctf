@@ -10,11 +10,13 @@ contract StakingPoolsDeployment {
     ERC20 public rewardToken;
     ERC20V2 public rewardToken2;
     ERC20[] public rewardTokens;
+    address public yourAddress;
 
     constructor() {
         stakingPools = new StakingPools();
 
-        stakedToken = new ERC20("staked Token", "sToken");
+        yourAddress = msg.sender;
+		stakedToken = new ERC20("staked Token", "sToken");
         rewardToken = new ERC20("reward Token 1", "r1Token");
         rewardToken2 = new ERC20V2("reward Token 2", "r1Token");
         rewardTokens = new ERC20[](2);
@@ -43,11 +45,11 @@ contract StakingPoolsDeployment {
     }
 
     function stageA() public view returns(bool) {
-        return rewardTokens[0].balanceOf(msg.sender) == 1e8 * 1e18;
+        return rewardTokens[0].balanceOf(yourAddress) == 1e8 * 1e18;
     }
     
     function stageB() public view returns(bool) {
-        return rewardTokens[1].balanceOf(msg.sender) > 16 * 1e8 * 1e18;
+        return rewardTokens[1].balanceOf(yourAddress) > 16 * 1e8 * 1e18;
     }
 
     function isSolved() public view returns(bool) {
