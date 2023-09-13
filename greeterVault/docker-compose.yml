@@ -1,0 +1,13 @@
+version: "3"
+services:
+  challenge:
+    image: chainflag/solidctf:1.0.0
+    restart: unless-stopped
+    ports:
+      - "20004:20000"
+    env_file:
+      - .env
+    volumes:
+      - ./flag.txt:/ctf/flag.txt
+      - ./contracts:/ctf/contracts
+      - ./challenge.yml:/ctf/challenge.yml
