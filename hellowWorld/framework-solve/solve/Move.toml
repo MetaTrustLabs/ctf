@@ -1,0 +1,13 @@
+[package]
+name = "hello_world_solution"
+version = "0.0.1"
+
+[dependencies]
+Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "devnet" }
+
+[dependencies.hello_world]
+version = '1.0.0'
+local = '../dependency'
+
+[addresses]
+solution =  "0x0"

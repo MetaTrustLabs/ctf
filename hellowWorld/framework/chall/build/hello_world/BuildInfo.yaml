@@ -1,0 +1,25 @@
+---
+compiled_package_info:
+  package_name: hello_world
+  address_alias_instantiation:
+    challenge: "0000000000000000000000000000000000000000000000000000000000000000"
+    std: "0000000000000000000000000000000000000000000000000000000000000001"
+    sui: "0000000000000000000000000000000000000000000000000000000000000002"
+  source_digest: 926C1A5BE59674A8A753C748BAC2223523E1C7B83BE30C6BA80F308E12491282
+  build_flags:
+    dev_mode: false
+    test_mode: false
+    generate_docs: false
+    generate_abis: false
+    install_dir: ~
+    force_recompilation: false
+    lock_file: "./Move.lock"
+    additional_named_addresses: {}
+    fetch_deps_only: false
+    skip_fetch_latest_git_deps: false
+    default_flavor: sui
+    default_edition: ~
+    deps_as_root: false
+dependencies:
+  - MoveStdlib
+  - Sui

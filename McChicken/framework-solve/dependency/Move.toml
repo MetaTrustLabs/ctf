@@ -1,0 +1,9 @@
+[package]
+name = 'mc_chicken'
+version = '1.0.0'
+
+[dependencies]
+Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "mainnet" }
+
+[addresses]
+challenge =  "1c22b6f1045294ae4a81b82035b53d75b57673ce6439a71f571c4b9c81692577"

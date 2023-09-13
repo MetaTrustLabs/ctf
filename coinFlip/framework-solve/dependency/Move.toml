@@ -1,0 +1,9 @@
+[package]
+name = 'coin_flip'
+version = '1.0.0'
+
+[dependencies]
+Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "mainnet" }
+
+[addresses]
+challenge =  "16b4ed7e0343b9549e242d26ae44c175bb3468f83032f50c727f1a1412b6aa33"
