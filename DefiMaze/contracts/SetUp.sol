@@ -20,6 +20,6 @@ contract SetUp {
     }
 
     function isSolved() public view returns(bool) {
-        return vault.isSolved();
+        return vault.solved();
     }
 }
