@@ -9,7 +9,7 @@ contract Challenge {
   Insurance public insurance;
 
   constructor() payable {
-    require(msg.value == 32 ether);
+    require(msg.value == 10 ether);
 
     insurance = new Insurance();
     pool = new StakingPool(msg.sender, address(insurance));
