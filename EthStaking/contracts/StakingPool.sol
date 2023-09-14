@@ -67,7 +67,7 @@ contract StakingPool {
   }
 
   function registerInsurance() external {
-    require(state == State.FundRaising);
+    require(state == State.Validating);
 
     if (insurance != address(0)) {
       IInsurance(insurance).registerContract();
