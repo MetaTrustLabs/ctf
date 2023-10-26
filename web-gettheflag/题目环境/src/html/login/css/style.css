@@ -1,0 +1,55 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background-image: url(../ctf.jpg);
+    background-repeat: no-repeat;
+}
+
+#bigBox
+{
+    margin: 0 auto;
+    margin-top: 200px;
+    padding: 20px 50px;
+    background-color: #00000680;
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    text-align: center;
+    background-position: 100px 100px;
+}
+
+#bigBox h1
+{
+    color: white;
+}
+
+#bigBox .inputBox .inputText
+{
+    margin-top: 20px;
+}
+
+#bigBox .inputBox .inputText span
+{
+    color: white;
+}
+
+#bigBox .inputBox .inputText input
+{
+    border:0;
+    padding: 10px 10px;
+    border-bottom: 1px solid white;
+    background-color: #00000000;
+    color: white;
+}
+
+#bigBox .loginButton
+{
+    margin-top: 30px;
+    width: 150px;
+    height: 25px;
+    color: white;
+    border: 0;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbbb 0%, #b465b4 0% );
+}

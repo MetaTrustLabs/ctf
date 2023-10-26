@@ -1,0 +1,7 @@
+题目名称: gettheflag
+
+题目描述: pass the nginx
+
+
+注：1.不需要给选手提供该dockerfile以及源码;
+2. flag修改./src/下的flag文件即可
